@@ -1,5 +1,4 @@
 import { createBrowserRouter } from 'react-router';
-//첫 화면으로 보이기
 import { lazy, Suspense } from 'react';
 
 const Loading = () => <div>Loading...</div>
@@ -12,7 +11,7 @@ const router = createBrowserRouter([
         element: <Suspense fallback={<Loading/>}><FactoryMap/></Suspense>,
     },
     {
-        path: "detail",
+        path: "/detail/:id",
         element: <Suspense fallback={<Loading/>}><Detail/></Suspense>,
     },
 ])
