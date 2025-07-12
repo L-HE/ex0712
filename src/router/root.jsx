@@ -12,7 +12,7 @@ const router = createBrowserRouter([
         element: <Suspense fallback={<Loading/>}><FactoryMap/></Suspense>,
     },
     {
-        path: "/detail",
+        path: "detail",
         element: <Suspense fallback={<Loading/>}><Detail/></Suspense>,
     },
 ])
